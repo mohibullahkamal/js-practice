@@ -22,3 +22,42 @@
 // }
 // sayHi()
 // sayHi()
+
+// function sum(a, b) {
+//    console.log(a + b)
+// }
+// sum(1, 2)
+
+// //function that prints a persons name
+// function printName(name) {
+//    console.log(name)
+// }
+// printName("Mooo")
+
+// //function returning sum
+// function returnSum(a, b) {
+//    return a + b
+// }
+// let sum = returnSum(1, 2)
+// console.log("The sum is: " + sum)
+
+// //Create a function with one argument (name) it will return
+// // that name to end of string "Hello "
+// function myName(name) {
+//    return name
+// }
+// function sayHello(name) {
+//    console.log("Hello " + name)
+// }
+// let n = myName("Mooo")
+// sayHello(n)
+// sayHello(myName("looo"))
+
+//Very, Very common in JS... Passing function as argument...
+function printVar(v) {
+   console.log(v)
+}
+function func(v) {
+   v("Hello RED World")
+}
+func(printVar)
