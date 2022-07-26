@@ -53,11 +53,22 @@
 // sayHello(n)
 // sayHello(myName("looo"))
 
-//Very, Very common in JS... Passing function as argument...
-function printVar(v) {
-   console.log(v)
+// //Very, Very common in JS... Passing function as argument...
+// function printVar(v) {
+//    console.log(v)
+// }
+// function func(v) {
+//    v("Hello RED World")
+// }
+// func(printVar)
+
+// very very important handling Callbacks...
+function sumCallback(a, b, callback) {
+   callback(a + b)
 }
-function func(v) {
-   v("Hello RED World")
+function handleSum(sum) {
+   console.log(sum)
 }
-func(printVar)
+sumCallback(2, 2, handleSum)
+
+//Another example of handling callback...
