@@ -62,13 +62,20 @@
 // }
 // func(printVar)
 
-// very very important handling Callbacks...
-function sumCallback(a, b, callback) {
-   callback(a + b)
-}
-function handleSum(sum) {
-   console.log(sum)
-}
-sumCallback(2, 2, handleSum)
+// // very very important handling Callbacks...
+// function sumCallback(a, b, callback) {
+//    callback(a + b)
+// }
+// function handleSum(sum) {
+//    console.log(sum)
+// }
+// sumCallback(2, 2, handleSum)
 
 //Another example of handling callback...
+function printVariable(n) {
+   console.log("Hello awesome " + n)
+}
+function myName(name, callback) {
+   callback(name)
+}
+myName("Mooo", printVariable)
