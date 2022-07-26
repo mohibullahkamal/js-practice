@@ -71,11 +71,19 @@
 // }
 // sumCallback(2, 2, handleSum)
 
-//Another example of handling callback...
-function printVariable(n) {
-   console.log("Hello awesome " + n)
+// //Another example of handling callback...
+// function printVariable(n) {
+//    console.log(n)
+// }
+// function handlePrint(name, callback) {
+//    callback("Hello " + name)
+// }
+// handlePrint("Mooo", printVariable)
+
+//Anonymous function... short form of above callback function...
+function printName(name, callback) {
+   callback("Hello " + name)
 }
-function myName(name, callback) {
-   callback(name)
-}
-myName("Mooo", printVariable)
+printName("Mooo", function (v) {
+   console.log(v)
+})
