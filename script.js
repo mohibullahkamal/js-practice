@@ -80,10 +80,22 @@
 // }
 // handlePrint("Mooo", printVariable)
 
-//Anonymous function... short form of above callback function...
-function printName(name, callback) {
-   callback("Hello " + name)
+// //Anonymous function... short form of above callback function...
+// function printName(name, callback) {
+//    callback("Hello " + name)
+// }
+// printName("Mooo", function (v) {
+//    console.log(v)
+// })
+
+//****no need of this one.. when using anonymous functions***
+// function printName(n) {
+//    console.log(n)
+// }
+//*********************
+function handlePrintName(n, callback) {
+   callback("Hello " + n)
 }
-printName("Mooo", function (v) {
+handlePrintName("MOOO", function (v) {
    console.log(v)
 })
