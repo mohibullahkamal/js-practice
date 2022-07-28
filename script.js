@@ -53,6 +53,12 @@
 // sayHello(n)
 // sayHello(myName("looo"))
 
+//
+//
+//
+//**************IMPORTANT**************** */
+//*************************************** */
+//*************************************** */
 // //Very, Very common in JS... Passing function as argument...
 // function printVar(v) {
 //    console.log(v)
@@ -88,14 +94,60 @@
 //    console.log(v)
 // })
 
-//****no need of this one.. when using anonymous functions***
-// function printName(n) {
-//    console.log(n)
+// //****no need of this one.. when using anonymous functions***
+// // function printName(n) {
+// //    console.log(n)
+// // }
+// //*********************
+// function handlePrintName(n, callback) {
+//    callback("Hello " + n)
 // }
-//*********************
-function handlePrintName(n, callback) {
-   callback("Hello " + n)
+// handlePrintName("MOOO", function (v) {
+//    console.log(v)
+// })
+
+// //Arrow functions...
+// //this function will be converted to arrow function...
+// function sum(a, b) {
+//    return a + b
+// }
+// let sumArrow = (a, b) => {
+//    return a + b
+// }
+// console.log(sumArrow(1, 2))
+
+// //change below function to arrow function...
+// function printName(name) {
+//    console.log(name)
+// }
+// //change this...
+// let printNameArrow = (name) => {
+//    console.log(name)
+// }
+// printNameArrow("MOOO")
+
+// //nice shortcut arrow function
+// //change this below to arrow shortcut function...
+// function printHi(name) {
+//    return "Hi " + name
+// }
+// //from bigger arrow function...
+// let printHiArrowVerbose = (name) => {
+//    return "Hi Verbose " + name
+// }
+// console.log(printHiArrowVerbose("VerboMoo"))
+// //changed to arrow function...
+// let printHiArrow = (name) => "Hi " + name
+// console.log(printHiArrow("MUUU"))
+
+//***********IMPORTANT**************** */
+//************************************ */
+//But why why why are we using ARROW functions
+//well its kinda less code when we write
+//it in an Anonymous Arrow function...
+function func(x, callback) {
+   callback(x)
 }
-handlePrintName("MOOO", function (v) {
-   console.log(v)
-})
+func("Mooo", function printName() {})
+//************************************ */
+//************************************ */
