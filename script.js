@@ -53,12 +53,12 @@
 // sayHello(n)
 // sayHello(myName("looo"))
 
-//
-//
-//
-//**************IMPORTANT**************** */
-//*************************************** */
-//*************************************** */
+// //
+// //
+// //
+// //**************IMPORTANT**************** */
+// //*************************************** */
+// //*************************************** */
 // //Very, Very common in JS... Passing function as argument...
 // function printVar(v) {
 //    console.log(v)
@@ -140,14 +140,28 @@
 // let printHiArrow = (name) => "Hi " + name
 // console.log(printHiArrow("MUUU"))
 
-//***********IMPORTANT**************** */
-//************************************ */
-//But why why why are we using ARROW functions
-//well its kinda less code when we write
-//it in an Anonymous Arrow function...
-function func(x, callback) {
-   callback(x)
-}
-func("Mooo", function printName() {})
-//************************************ */
-//************************************ */
+// //***********IMPORTANT**************** */
+// //************************************ */
+// //But why why why are we using ARROW functions
+// //well its kinda less code when we write
+// //it in an Anonymous Arrow function...
+// function func(x, callback) {
+//    callback(x)
+// }
+// // //Instead of this...took 3 lines..do it in 1 line..
+// // func("Mooo", function (name) {
+// //    console.log("Hi " + name)
+// // })
+// //Write this arrow function instead..In one single line...smart
+// func("MoooArrow", (name) => console.log("Hi " + name))
+// //this has "Hi " while calling func... below has before...
+// //************************************ */
+// //************************************ */
+// //Another practice example; similar to above...
+// function funcHi(x, callback) {
+//    callback("Hi " + x)
+// }
+// funcHi("MooFuncHi", (variable) => console.log(variable))
+// //"Hi " is mentioned before; in funcHi()...
+// //************************************* */
+// //************************************* */
