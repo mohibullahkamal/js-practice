@@ -166,11 +166,11 @@
 // //************************************* */
 // //************************************* */
 
-// //Let and const variables
-// //const variables does not allow any changes to variables;
-// //where as let variables allow for changes later on...
-// const a = 10
-// // a = 100 //will show an error because a is const variable...
-// let b = 20
-// b = 200
-// console.log(a + b)
+//Let and const variables
+//const variables does not allow any changes to variables;
+//where as let variables allow for changes later on...
+const a = 10
+// a = 100 //will show an error because a is const variable...
+let b = 20
+b = 200
+console.log(a + b)
