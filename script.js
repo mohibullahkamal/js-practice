@@ -175,4 +175,11 @@
 // b = 200
 // console.log(a + b)
 
-//
+//18//repetition...TLDR
+//convert this to arrow function..
+function printName(name) {
+   console.log(name)
+}
+//arrow function below
+let printNameArrow = (name) => console.log(name)
+printNameArrow("moooArrow")
