@@ -175,11 +175,45 @@
 // b = 200
 // console.log(a + b)
 
-//18//repetition...TLDR
-//convert this to arrow function..
-function printName(name) {
-   console.log(name)
-}
-//arrow function below
-let printNameArrow = (name) => console.log(name)
-printNameArrow("moooArrow")
+//
+//
+// //18// repetition...TLDR
+//
+// //convert this to arrow function..
+// function printName(name) {
+//    console.log(name)
+// }
+// //arrow function below
+// let printNameArrow = (name) => console.log(name)
+// printNameArrow("moooArrow")
+// //but whats the benefit of writting arrow functions...
+// //well it allows for little bit of less code..
+// //for eg: below people usually use arrow function with normal
+// //functions...
+// function func(x, callback) {
+//    console.log(x)
+// }
+// func(20, (variable) => console.log(variable))
+
+//
+//
+//19// Stack trace and Call Stack...
+//
+//helps us find error in out code using Chrome Dev Tools...
+
+//
+//
+//20// Hoisting...
+//
+//functions are always hoisted to the top; unlike variable
+//where position of variables matter... if variable is down
+//in the code that Javascript will throw error because it reads
+// everything from top to bottom... only exception is "function"
+//also only old way of function... not the Arrow functions...
+//this is because arrow functions are technically variables.. not
+//functions; therefore only functions get Hoisted... not variables...
+
+//
+//
+//21// Scoping.. complex topic than Hoisting...
+//
