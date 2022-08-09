@@ -217,3 +217,54 @@
 //
 //21// Scoping.. complex topic than Hoisting...
 //
+//see screenshots for details...
+
+//
+//
+//22// Closures.. very similar to Scoping..
+//
+let a = 1
+function print() {
+   console.log(a)
+}
+print()
+
+//
+//
+////
+//
+
+//
+//
+////
+//
+
+//
+//
+////
+//
+
+//
+//
+////
+//
+
+//
+//
+////
+//
+
+//
+//
+////
+//
+
+//
+//
+////
+//
+
+//
+//
+////
+//
