@@ -219,15 +219,27 @@
 //
 //see screenshots for details...
 
-//
-//
-//22// Closures.. very similar to Scoping..
-//
-let a = 1
-function print() {
-   console.log(a)
+// //
+// //
+// //22// Closures.. very similar to Scoping..
+// //
+// let a = 1
+// function print() {
+//    console.log(a)
+// }
+// print()
+
+//Usually above case of Closure rarely happens
+//Normally Closures are functions within a function..
+function print(variable) {
+   return function func(variable2) {
+      console.log(variable)
+      console.log(variable2)
+   }
 }
-print()
+let a = print(1)
+a(11)
+a(111)
 
 //
 //
