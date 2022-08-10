@@ -229,16 +229,18 @@
 // }
 // print()
 
+//Normally Interview qs... but rarely used in real life..
 //Usually above case of Closure rarely happens
 //Normally Closures are functions within a function..
 function print(variable) {
+   let c = 3
    return function func(variable2) {
       console.log(variable)
       console.log(variable2)
+      console.log(c)
    }
 }
 let a = print(1)
-a(11)
 a(111)
 
 //
