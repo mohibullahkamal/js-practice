@@ -201,23 +201,23 @@
 //
 //helps us find error in out code using Chrome Dev Tools...
 
-//
-//
-//20// Hoisting...
-//
-//functions are always hoisted to the top; unlike variable
-//where position of variables matter... if variable is down
-//in the code that Javascript will throw error because it reads
-// everything from top to bottom... only exception is "function"
-//also only old way of function... not the Arrow functions...
-//this is because arrow functions are technically variables.. not
-//functions; therefore only functions get Hoisted... not variables...
+// //
+// //
+// //20// Hoisting...
+// //
+// //functions are always hoisted to the top; unlike variable
+// //where position of variables matter... if variable is down
+// //in the code that Javascript will throw error because it reads
+// // everything from top to bottom... only exception is "function"
+// //also only old way of function... not the Arrow functions...
+// //this is because arrow functions are technically variables.. not
+// //functions; therefore only functions get Hoisted... not variables...
 
-//
-//
-//21// Scoping.. complex topic than Hoisting...
-//
-//see screenshots for details...
+// //
+// //
+// //21// Scoping.. complex topic than Hoisting...
+// //
+// //see screenshots for details...
 
 // //
 // //
@@ -229,35 +229,62 @@
 // }
 // print()
 
-//Normally Interview qs... but rarely used in real life..
-//Usually above case of Closure rarely happens
-//Normally Closures are functions within a function..
-function print(variable) {
-   let c = 3
-   return function func(variable2) {
-      console.log(variable)
-      console.log(variable2)
-      console.log(c)
-   }
-}
-let a = print(1)
-a(111)
+// //Normally Interview qs... but rarely used in real life..
+// //Usually above case of Closure rarely happens
+// //Normally Closures are functions within a function..
+// function print(variable) {
+//    let c = 3
+//    //just returns another function...
+//    return function func(variable2) {
+//       console.log(variable)
+//       console.log(variable2)
+//       console.log(c)
+//    }
+// }
+// let a = print(1) //so this just returns another function func(variable2)..
+// console.log(a) //this prints out the function 'func(variable2)'..
+// a(111) //now just passing a(111); you basically saying
+// //"func(111)"... which returns the log of "variable",
+// //"variable2", and "c"... Where can this be important??
+// //Well, when you need to pass many functions in one
+// //function...
+
+// //
+// //
+// //23// const.... in this below chapters we talk about advanced variables...
+// //main reason to use const over 'let' is you cannot redefine
+// //the value of the variable...
+// // let a = 1
+// // console.log(a)
+// const b = 2
+// b = 33 // show error cause 'const' variables cannot change...
+// console.log(b)
+// //'const' used when something is not changing...
+// //its advisable to use const instead of let... that way you can
+// //be alerted if something is changing...
 
 //
 //
-////
+//24// 'var' this the third way to create variables...
 //
+//you should never use var... it was introduced at begining of JS
+//'var' very wierdly... and doesnot follow scoping rules..
+//so never use 'var'; since with latest JS you can use 'let' and 'const'
 
-//
-//
-////
-//
+// //
+// //
+// //25// Type coercion... way of converting one type of information to another type
+// //we have various types--> number, string, boolean, null, undefined...
+// let a = "1"
+// // console.log(a)
+// // console.log(typeof a)
+// console.log(parseInt(a))
+// console.log(typeof parseInt(a))
 
-//
-//
-////
-//
-
+let a = "1.3"
+console.log(parseInt(a)) //only '1' is taken from '1.3'..
+console.log(parseFloat(a)) //now using float gives desired results..
+console.log(typeof parseFloat(a))
 //
 //
 ////
