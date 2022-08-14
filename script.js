@@ -287,9 +287,19 @@
 // console.log(typeof parseFloat(a)) //we are explicitly saying to computer
 // //that we want a number...
 
-let a = 1.34 //this is a number; lets convert it to String..
-// console.log(a.toString())
-console.log(typeof a.toString()) //this is actually a String; although looks like number...
+// let a = 1.34 //this is a number; lets convert it to String..
+// // console.log(a.toString())
+// console.log(typeof a.toString()) //this is actually a String; although looks like number...
+
+//What is implicit type coercion??
+//it means that the computer is taking care to coercion...
+let a = 1
+// const b = "Hello"
+const b = "1"
+console.log(b + a)
+console.log(b == a) //this is IMPLICIT type coercion; JS always does it...
+console.log(a.toString())
+console.log(typeof a.toString())
 
 //
 //
