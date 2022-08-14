@@ -291,20 +291,46 @@
 // // console.log(a.toString())
 // console.log(typeof a.toString()) //this is actually a String; although looks like number...
 
-//What is implicit type coercion??
-//it means that the computer is taking care to coercion...
-let a = 1
-// const b = "Hello"
-const b = "1"
-console.log(b + a)
-console.log(b == a) //this is IMPLICIT type coercion; JS always does it...
-console.log(a.toString())
-console.log(typeof a.toString())
+// //What is implicit type coercion??
+// //it means that the computer is taking care to coercion...
+// let a = 1
+// // const b = "Hello" //now its assuming it to be String!!
+// const b = "1"
+// console.log(b + a)
+// console.log(b == a) //this is IMPLICIT type coercion; JS always does it...
+// console.log(a.toString())
+// console.log(typeof a.toString())
 
-//
-//
-////
-//
+// let a = 1
+// const b = "3"
+// //const b = "Hello" //gives error because cannot minus with string...
+// console.log(b - a) //so when Minus its assuming "3" String as number!!
+// //to fix the above issues with JS parsing... we explicitly parse it beforehand...
+// console.log(parseInt(b) + a) //we explicitly parse it...
+
+// //
+// //
+// //26//How to check for Equality ... since Type Coercion is confusing
+// // const a = 1
+// // const b = "1"
+// //What happens when we check for equality between 0 and false??
+// const a = 0 //JS engine converts 0 to falsy...hence this outcome...
+// const b = false //when you check for equality; JS says 0 and false
+// //are equal...
+// console.log(a == b) //check for equality...JS is doing Type Coercion
+// //and making a and b as number to see if they are equal...
+
+// //now lets see with "" empty string...
+// const d = "" //any empty string is converted to falsy by JS engine...
+// const e = false
+// console.log(d == e) //returns true...
+
+// // //***RECOMMENDED*** use "===" instead of "==" sign...
+// //IF you want to be serious and tell JS Do not convert the type;
+// //use === sign... solves above issues and confusion with JS type coercion..
+// const d = ""
+// const e = false
+// console.log(d === e) //returns false...
 
 //
 //
