@@ -281,10 +281,16 @@
 // console.log(parseInt(a))
 // console.log(typeof parseInt(a))
 
-let a = "1.3"
-console.log(parseInt(a)) //only '1' is taken from '1.3'..
-console.log(parseFloat(a)) //now using float gives desired results..
-console.log(typeof parseFloat(a))
+// let a = "1.3"
+// console.log(parseInt(a)) //only '1' is taken from '1.3'..
+// console.log(parseFloat(a)) //now using float gives desired results..
+// console.log(typeof parseFloat(a)) //we are explicitly saying to computer
+// //that we want a number...
+
+let a = 1.34 //this is a number; lets convert it to String..
+// console.log(a.toString())
+console.log(typeof a.toString()) //this is actually a String; although looks like number...
+
 //
 //
 ////
