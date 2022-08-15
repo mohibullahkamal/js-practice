@@ -332,6 +332,22 @@
 // const e = false
 // console.log(d === e) //returns false...
 
+// //Equality to see how JS engine behaves...
+// const a = null
+// const b = undefined
+// console.log(a == b) //returns true
+// console.log(a === b) //returns false... they are technically not equal so false...
+// console.log(a == null) //return true
+// console.log(a === undefined) //returns false.. as expected
+// console.log(a === null) //returns true
+
+const a = 1
+const b = 2
+const bb = "1"
+console.log(a != b)
+console.log(a != bb) //returns false... because type coercion converts "1" to number
+console.log(a !== bb) //returns true... because now its
+
 //
 //
 ////
