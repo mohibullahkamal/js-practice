@@ -350,14 +350,28 @@
 // console.log(a !== bb) //returns true... because now its
 // //for more look into Screenshots...
 
-//
-//
-//27// "NaN" is a side effect of Type Coercion ... when dealing with numbers
-const a = "1"
-console.log(parseInt(a)) //returns NaN --- not a number..
-console.log(typeof parseInt(a)) //type is number; but how can 'a' be number...
+// //
+// //
+// //27// "NaN" is a side effect of Type Coercion ... when dealing with numbers
+// const a = "fsdfsfsd"
+// console.log(parseInt(a)) //returns NaN --- not a number..
+// console.log(typeof parseInt(a)) //type is number; but how can 'a' be number...
 
-//
+// //NaN is special and you need to specifically deal with it...
+// const aa = "fsdfeefwrw"
+// console.log(parseInt(aa)) //returns NaN; but is not equal to NaN --> aa == NaN...
+// console.log(parseInt(aa) == NaN) //returns false... which is wrong!!
+// console.log(parseInt(aa) === NaN) //still returns false... this is also wrong!!
+
+//this a peculiar way how JS is built!!!
+//NaN is not equal to anything; Wierd...
+//So now to check if something is not a number; we use a special buildin function...
+const aaa = parseInt("afdfs")
+const bbb = 1
+console.log(aaa) //returns NaN
+console.log(bbb)
+console.log(isNaN(aaa)) //special buildin function for using with JS NaN craziness..
+console.log(isNaN(bbb)) //correctly returns false...
 
 //
 //
