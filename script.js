@@ -341,16 +341,22 @@
 // console.log(a === undefined) //returns false.. as expected
 // console.log(a === null) //returns true
 
-const a = 1
-const b = 2
-const bb = "1"
-console.log(a != b)
-console.log(a != bb) //returns false... because type coercion converts "1" to number
-console.log(a !== bb) //returns true... because now its
+//Meaning using === sign disables Type Coercion... Interesting
+// const a = 1
+// const b = 2
+// const bb = "1"
+// console.log(a != b)
+// console.log(a != bb) //returns false... because type coercion converts "1" to number
+// console.log(a !== bb) //returns true... because now its
+// //for more look into Screenshots...
 
 //
 //
-////
+//27// "NaN" is a side effect of Type Coercion ... when dealing with numbers
+const a = "1"
+console.log(parseInt(a)) //returns NaN --- not a number..
+console.log(typeof parseInt(a)) //type is number; but how can 'a' be number...
+
 //
 
 //
