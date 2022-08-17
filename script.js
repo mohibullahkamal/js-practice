@@ -363,19 +363,21 @@
 // console.log(parseInt(aa) == NaN) //returns false... which is wrong!!
 // console.log(parseInt(aa) === NaN) //still returns false... this is also wrong!!
 
-//this a peculiar way how JS is built!!!
-//NaN is not equal to anything; Wierd...
-//So now to check if something is not a number; we use a special buildin function...
-const aaa = parseInt("afdfs")
-const bbb = 1
-console.log(aaa) //returns NaN
-console.log(bbb)
-console.log(isNaN(aaa)) //special buildin function for using with JS NaN craziness..
-console.log(isNaN(bbb)) //correctly returns false...
+// //this a peculiar way how JS is built!!!
+// //NaN is not equal to anything; Wierd...
+// //So now to check if something is not a number; we use a special buildin method...
+// const aaa = parseInt("afdfs")
+// const bbb = 1
+// console.log(aaa) //returns NaN
+// console.log(bbb)
+// console.log(isNaN(aaa)) //special buildin function for using with JS NaN craziness..
+// console.log(isNaN(bbb)) //correctly returns false...
 
 //
 //
-////
+//28// Arrays ... the most fun part variables in JS ... essentially you can list
+//multiple variables...
+
 //
 
 //
