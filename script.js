@@ -376,7 +376,8 @@
 //
 //
 //28// Arrays ... the most fun part variables in JS ... essentially you can list
-//multiple variables...
+//multiple variables... up until now we created variable with only one value; what
+//if the variable took multiple values... we use Arrays...
 
 //
 
