@@ -379,7 +379,11 @@
 //multiple variables... up until now we created variable with only one value; what
 //if the variable took multiple values... we use Arrays...
 const a = [1, 2, 3, 4]
-console.log(a)
+console.log(a) //displays array a
+console.log(a[0]) //display only the 1st element of array a
+a.push(11) //this is how we add an element to list...
+console.log(a) //now the array has another element added to the list..
+
 //
 
 //
