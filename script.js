@@ -383,7 +383,8 @@ console.log(a) //displays array a
 console.log(a[0]) //display only the 1st element of array a
 a.push(11) //this is how we add an element to list...
 console.log(a) //now the array has another element added to the list..
-
+a.push(["hi", "bye"])
+console.log(a[5][1]) //accessing array within an array...
 //
 
 //
