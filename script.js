@@ -373,23 +373,34 @@
 // console.log(isNaN(aaa)) //special buildin function for using with JS NaN craziness..
 // console.log(isNaN(bbb)) //correctly returns false...
 
-//
-//
-//28// Arrays ... the most fun part variables in JS ... essentially you can list
-//multiple variables... up until now we created variable with only one value; what
-//if the variable took multiple values... we use Arrays...
-const a = [1, 2, 3, 4]
-console.log(a) //displays array a
-console.log(a[0]) //display only the 1st element of array a
-a.push(11) //this is how we add an element to list...
-console.log(a) //now the array has another element added to the list..
-a.push(["hi", "bye"])
-console.log(a[5][1]) //accessing array within an array...
-//
+// //
+// //
+// //28// Arrays ... the most fun part variables in JS ... essentially you can list
+// //multiple variables... up until now we created variable with only one value; what
+// //if the variable took multiple values... we use Arrays...
+// const a = [1, 2, 3, 4]
+// console.log(a) //displays array a
+// console.log(a[0]) //display only the 1st element of array a
+// a.push(11) //this is how we add an element to list...
+// console.log(a) //now the array has another element added to the list..
+// a.push(["hi", "bye"])
+// console.log(a[5][1]) //accessing array within an array...
+// console.log(a.length)
+// //
 
 //
 //
-//29//
+//29//***Objects ... probably the most important variable type in JS
+//because they allow you to do so much... Object is a collection of Information
+//all related in some way...
+let name = "Moo"
+const age = 31
+const favoriteNumber = 3
+
+let person = { name: "Moooo", age: 31 } //name is the property...
+//acts as a key..."Moooo" acts as a value to the key...
+console.log(person)
+
 //
 
 //
