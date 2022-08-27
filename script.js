@@ -175,10 +175,12 @@
 // b = 200
 // console.log(a + b)
 
-//
-//
+// //
+// //
+// //
+// //
 // //18// repetition...TLDR
-//
+// //
 // //convert this to arrow function..
 // function printName(name) {
 //    console.log(name)
@@ -195,12 +197,16 @@
 // }
 // func(20, (variable) => console.log(variable))
 
-//
-//
+// //
+// //
+// //
+// //
 //19// Stack trace and Call Stack...
-//
+// //
 //helps us find error in out code using Chrome Dev Tools...
 
+// //
+// //
 // //
 // //
 // //20// Hoisting...
@@ -215,10 +221,14 @@
 
 // //
 // //
+// //
+// //
 // //21// Scoping.. complex topic than Hoisting...
 // //
 // //see screenshots for details...
 
+// //
+// //
 // //
 // //
 // //22// Closures.. very similar to Scoping..
@@ -251,6 +261,8 @@
 
 // //
 // //
+// //
+// //
 // //23// const.... in this below chapters we talk about advanced variables
 // //main reason to use const over 'let' is you cannot redefine
 // //the value of the variable...
@@ -263,14 +275,18 @@
 // //its advisable to use const instead of let... that way you can
 // //be alerted if something is changing...
 
-//
-//
-//24// 'var' this the third way to create variables...
-//
+// //
+// //
+// //
+// //
+// //24// 'var' this the third way to create variables...
+// // //
 //you should never use var... it was introduced at begining of JS
 //'var' very wierdly... and doesnot follow scoping rules..
 //so never use 'var'; since with latest JS you can use 'let' and 'const'
 
+// //
+// //
 // //
 // //
 // //25// Type coercion. way of converting one type of information to another type
@@ -308,6 +324,8 @@
 // //to fix the above issues with JS parsing... we explicitly parse it beforehand...
 // console.log(parseInt(b) + a) //we explicitly parse it...
 
+// //
+// //
 // //
 // //
 // //26//How to check for Equality ... since Type Coercion is confusing
@@ -352,6 +370,8 @@
 
 // //
 // //
+// //
+// //
 // //27// "NaN" is a side effect of Type Coercion ... when dealing with numbers
 // const a = "fsdfsfsd"
 // console.log(parseInt(a)) //returns NaN --- not a number..
@@ -375,6 +395,8 @@
 
 // // //
 // // //
+// // //
+// // //
 // // //28// Arrays ... the most fun part variables in JS ... essentially you can list
 // // //multiple variables... up until now we created variable with only one value; what
 // // //if the variable took multiple values... we use Arrays...
@@ -388,6 +410,8 @@
 // // console.log(a.length)
 // // //
 
+// // //
+// // //
 // // //
 // // //
 // // //29//***Objects ... probably the most important variable type in JS
@@ -439,35 +463,48 @@
 
 //
 //
-//30//Pass by Reference v/s Pass by Value
+//
+//
+//30//Pass-by-Value v/s Pass-by-Reference
+//
 //
 
 //
 //
+//
+//
 ////
+//
 //
 
 //
 //
+//
+//
 ////
+//
 //
 
 //
 //
+//
+//
 ////
+//
 //
 
 //
 //
+//
+//
 ////
+//
 //
 
 //
 //
-////
-//
-
 //
 //
 ////
+//
 //
