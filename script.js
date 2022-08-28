@@ -467,6 +467,22 @@
 //
 //
 //30//Pass-by-Value v/s Pass-by-Reference
+let a = 10
+let b = "Hi"
+let c = { name: "Moooo" } //lets say its memory address is 0x01
+let d = c //that means "d" is pointed to memory location of "c" and any changes
+//made in either 'c' or 'd' will effects both...
+
+console.log("a = " + a)
+console.log("b = " + b)
+console.log("c = " + JSON.stringify(c))
+console.log("d = " + JSON.stringify(d))
+console.log("****************************************")
+console.log("****************************************")
+
+d.name = "Joe" //just by changing this... will effect c as well.
+console.log("c = " + JSON.stringify(c))
+console.log("d = " + JSON.stringify(d))
 //
 //
 
