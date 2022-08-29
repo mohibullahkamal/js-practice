@@ -443,7 +443,7 @@
 // //       console.log("HiHi2")
 // //    },
 // // }
-// // // console.log(person.sayHi()) //returns "Hi" and undefined... therefore only use below
+// // // console.log(person.sayHi()) //returns "Hi" and undefined. therefore only use below
 // // person.sayHi() //use this one instead...
 // // //
 
@@ -462,27 +462,68 @@
 // //
 // //
 
-//
-//
-//
-//
-//30//Pass-by-Value v/s Pass-by-Reference
-let a = 10
-let b = "Hi"
-let c = { name: "Moooo" } //lets say its memory address is 0x01
-let d = c //that means "d" is pointed to memory location of "c" and any changes
-//made in either 'c' or 'd' will effects both...
+// //
+// //
+// //
+// //
+// //30//Pass-by-Value v/s Pass-by-Reference
+// let a = 10
+// let b = "Hi"
+// let c = { name: "Moooo" } //lets say its memory address is 0x01
+// let d = c //that means "d" is pointed to memory location of "c" and any changes
+// //made in either 'c' or 'd' will effects both...
 
-console.log("a = " + a)
-console.log("b = " + b)
-console.log("c = " + JSON.stringify(c))
-console.log("d = " + JSON.stringify(d))
-console.log("****************************************")
-console.log("****************************************")
+// console.log("a = " + a)
+// console.log("b = " + b)
+// console.log("c = " + JSON.stringify(c))
+// console.log("d = " + JSON.stringify(d))
+// console.log("****************************************")
+// console.log("****************************************")
 
-d.name = "Joe" //just by changing this... will effect c as well.
-console.log("c = " + JSON.stringify(c))
-console.log("d = " + JSON.stringify(d))
+// d.name = "Joe" //just by changing this... will effect c as well.
+// console.log("c = " + JSON.stringify(c))
+// console.log("d = " + JSON.stringify(d))
+
+// //this confuses a lot of developers...
+// let a = [1, 2] //lets say memory location is 0x01
+// let b = [1, 2] //lets say memory location is 0x02
+// console.log(a === b) //both says false... they have different memory locations
+// console.log(a == b) //both have different memory location...
+// console.log("****************************************")
+
+// a.push(3)
+// console.log("a ---> " + a)
+// console.log("b ---> " + b)
+// console.log("****************************************")
+
+// //how about we use const... no error because we donot change to value;
+// //but only change the memory address...
+// //this confuses a lot of developers...
+// const a = [1, 2] //lets say memory location is 0x01
+// const b = [1, 2] //lets say memory location is 0x02
+// a.push(3)
+// console.log("a ---> " + a)
+// console.log("b ---> " + b)
+
+// a = [1, 2, 3] //this is when you totally re-define a new
+// //memory address for a; therefore now shows error...
+// //because "const a" is constant and cannot be changed..
+// console.log("****************************************")
+
+//when const shows error; and when not...
+const a = { name: "Moo" } //0x01
+// a = { name: "Moo", age: 31 } //0x02 //this cannot be used..
+console.log(a)
+console.log("****************************************")
+a.age = 31 //but this can be used to add to array... even if const..
+console.log(a)
+
+//all these wierd things that you see is because arrays and
+//Objects are referrences... all they are storing are references..
+//and this reference is where the data is stored...all they care
+//about is that they have a reference as their value... so this
+//reference is what you are comparing...
+
 //
 //
 
