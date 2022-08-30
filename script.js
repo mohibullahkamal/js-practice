@@ -510,19 +510,33 @@
 // //because "const a" is constant and cannot be changed..
 // console.log("****************************************")
 
-//when const shows error; and when not...
-const a = { name: "Moo" } //0x01
-// a = { name: "Moo", age: 31 } //0x02 //this cannot be used..
-console.log(a)
-console.log("****************************************")
-a.age = 31 //but this can be used to add to array... even if const..
-console.log(a)
+// //when const shows error; and when not...
+// const a = { name: "Moo" } //0x01
+// // a = { name: "Moo", age: 31 } //0x02 //this cannot be used..
+// console.log(a)
+// console.log("****************************************")
+// a.age = 31 //but this can be used to add to array... even if const..
+// console.log(a)
 
-//all these wierd things that you see is because arrays and
-//Objects are referrences... all they are storing are references..
-//and this reference is where the data is stored...all they care
-//about is that they have a reference as their value... so this
-//reference is what you are comparing...
+// //all these wierd things that you see is because arrays and
+// //Objects are referrences... all they are storing are references..
+// //and this reference is where the data is stored...all they care
+// //about is that they have a reference as their value... so this
+// //reference is what you are comparing...
+
+//all because of passByReference...
+const a = [1, 2]
+const elementToAdd = 3 //stays 3; doesnot change...
+
+add(a, elementToAdd)
+
+console.log(a)
+console.log(elementToAdd) //still shows 3
+
+function add(array, element) {
+   element = element + 1
+   array.push(element) //basically pushing element in stack..
+}
 
 //
 //
