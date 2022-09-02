@@ -546,6 +546,18 @@
 //
 //31//Array methods... these are handy array methods that make your life much better
 
+// //difference between functions and methods...
+// //this is function...
+// function func1() {
+//     //bla bla
+// }
+// const obj = {
+//     //this is method... basically a function within object...
+//     func2() {
+//         //bla bla
+//     }
+// }
+
 //
 //
 
