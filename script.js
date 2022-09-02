@@ -524,20 +524,19 @@
 // //about is that they have a reference as their value... so this
 // //reference is what you are comparing...
 
-//all because of passByReference...
-const a = [1, 2]
-const elementToAdd = 3 //stays 3; doesnot change...
+// //all because of passByReference...
+// const a = [1, 2] //0x01
+// const elementToAdd = 3 //stays 3;doesnot change //just have value 3
 
-add(a, elementToAdd)
+// add(a, elementToAdd)
 
-console.log(a)
-console.log(elementToAdd) //still shows 3
+// console.log(a)
+// console.log(elementToAdd) //still shows 3
 
-function add(array, element) {
-   element = element + 1
-   array.push(element) //basically pushing element in stack..
-}
-
+// function add(array, element) {
+//    element = element + 1 //doesnot matter; 4 in this case calling "add"
+//    array.push(element) //basically pushing element in stack.//references 0x01
+// }
 //
 //
 
@@ -545,7 +544,8 @@ function add(array, element) {
 //
 //
 //
-////
+//31//Array methods... these are handy array methods that make your life much better
+
 //
 //
 
