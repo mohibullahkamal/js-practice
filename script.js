@@ -558,6 +558,12 @@
 //     }
 // }
 
+//WHAT IS ---> Array methods... basically functions on arrays...forEach()
+const a = [1, 2, 3]
+a.forEach((number, index) => {
+   console.log("Number--> " + number + "        " + index + " <--Array Index")
+})
+
 //
 //
 
