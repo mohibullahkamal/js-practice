@@ -606,26 +606,45 @@
 //The following are rarely used array methods...
 //***************************************
 //***************************************
-//.some()... this is to check True/False whether any elements match the following..
 const a = [1, 2, 3, 4, 5, 6]
 const b = [1, 5, 7, 9, 11, 13]
-const someA = a.some((number) => {
-   return number > 5 //check whether any array elements matches...
-})
-const someB = b.some((number) => {
-   return number > 100 //check whether any array elements matches...
-})
-console.log(someA)
-console.log(someA)
-console.log("***************************************")
 
-//.every()...checks whether array elements match...
-const everyA = a.every((number) => {
-   return number > 3
-})
-console.log(everyA)
-console.log("***************************************")
+// //
+// //.some()... this is to check True/False whether any elements match the following..
+// const someA = a.some((number) => {
+//    return number > 5 //check whether any array elements matches...
+// })
+// const someB = b.some((number) => {
+//    return number > 100 //check whether any array elements matches...
+// })
+// console.log(someA)
+// console.log(someA)
+// console.log("***************************************")
+// //
+// //
 
+// //
+// //.every()...checks whether EVERY SINGLE array elements match...
+// const everyA = a.every((number) => {
+//    return number > 3
+// })
+// const everyB = b.every((number) => {
+//    return number < 100
+// })
+// console.log(everyA)
+// console.log(everyB) //true because every array element is smaller than 100..
+// console.log("***************************************")
+// //
+// //
+
+//
+//.reduce()... one of the more confusing Array functions; you take the whole
+//array and reduce it to one singular value.. this function has two arguments..
+const reduceA = a.reduce((sum, number) => {
+   return sum + number
+}, 0)
+console.log(reduceA)
+console.log("***************************************")
 //
 //
 
