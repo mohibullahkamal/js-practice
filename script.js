@@ -558,11 +558,32 @@
 //     }
 // }
 
-//WHAT IS ---> Array methods... basically functions on arrays...forEach()
-const a = [1, 2, 3]
-a.forEach((number, index) => {
-   console.log("Number--> " + number + "        " + index + " <--Array Index")
-})
+// //WHAT IS ---> Array methods... basically functions on arrays...
+// //forEach() Allows use to loop through an array... doesnot return anything..
+// const a = [1, 2, 3]
+// a.forEach((number, index) => {
+//    console.log("Number--> " + number + "        " + index + " <--Array Index")
+// })
+
+// //map()... is also an array function... it returns a value...
+// //very useful array method and you will see it being used all over the place..
+// const a = [1, 2, 3]
+// const newA = a.map((number) => {
+//    return number * 2
+// })
+// console.log(newA)
+
+// //filter().... is another useful array method...
+// const a = [1, 2, 3, 4, 5, 6]
+// const b = [1, 5, 7, 9, 11, 13]
+// const newA = a.filter((number) => {
+//    return number <= 5 //only return values smaller or equal to 5
+// })
+// const newB = b.filter((number) => {
+//    return number <= 8 //only return values smaller or equal to 5
+// })
+// console.log("a array values--> " + newA)
+// console.log("b array values--> " + newB)
 
 //
 //
