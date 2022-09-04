@@ -559,13 +559,13 @@
 // }
 
 // //WHAT IS ---> Array methods... basically functions on arrays...
-// //forEach() Allows use to loop through an array... doesnot return anything..
+// //.forEach() Allows use to loop through an array... doesnot return anything..
 // const a = [1, 2, 3]
 // a.forEach((number, index) => {
 //    console.log("Number--> " + number + "        " + index + " <--Array Index")
 // })
 
-// //map()... is also an array function... it returns a value...
+// //.map()... is also an array function... it returns a value...
 // //very useful array method and you will see it being used all over the place..
 // const a = [1, 2, 3]
 // const newA = a.map((number) => {
@@ -573,7 +573,7 @@
 // })
 // console.log(newA)
 
-// //filter().... is another useful array method...
+// //.filter().... is another useful array method...
 // const a = [1, 2, 3, 4, 5, 6]
 // const b = [1, 5, 7, 9, 11, 13]
 // const newA = a.filter((number) => {
@@ -584,6 +584,47 @@
 // })
 // console.log("a array values--> " + newA)
 // console.log("b array values--> " + newB)
+
+// //.find() ... very similar to .filter() array method... it loops
+// //through elements in an array then ONLY returns something
+// //when the FISRT match is found.. then just returns the element; and
+// //forget about the rest elements in array... wierd but super useful...
+// const a = [1, 2, 3, 4, 5, 6]
+// const b = [1, 5, 7, 9, 11, 13]
+// const findA = a.find((number) => {
+//    return number > 5 //only returns first match and forgets about rest elements...
+// })
+// const findB = b.find((number) => {
+//    return number > 5 // only returns first match; forgets the rest...
+// })
+// console.log(findA)
+// console.log(findB)
+
+//***************************************
+//***************************************
+//***************************************
+//The following are rarely used array methods...
+//***************************************
+//***************************************
+//.some()... this is to check True/False whether any elements match the following..
+const a = [1, 2, 3, 4, 5, 6]
+const b = [1, 5, 7, 9, 11, 13]
+const someA = a.some((number) => {
+   return number > 5 //check whether any array elements matches...
+})
+const someB = b.some((number) => {
+   return number > 100 //check whether any array elements matches...
+})
+console.log(someA)
+console.log(someA)
+console.log("***************************************")
+
+//.every()...checks whether array elements match...
+const everyA = a.every((number) => {
+   return number > 3
+})
+console.log(everyA)
+console.log("***************************************")
 
 //
 //
