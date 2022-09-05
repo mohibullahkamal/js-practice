@@ -545,7 +545,9 @@
 //
 //
 //31//Array methods... these are handy array methods that make your life much better
+//
 
+//
 // //difference between functions and methods...
 // //this is function...
 // function func1() {
@@ -557,14 +559,21 @@
 //         //bla bla
 //     }
 // }
+//
 
+//
 // //WHAT IS ---> Array methods... basically functions on arrays...
+//
+
+//
 // //.forEach() Allows use to loop through an array... doesnot return anything..
 // const a = [1, 2, 3]
 // a.forEach((number, index) => {
 //    console.log("Number--> " + number + "        " + index + " <--Array Index")
 // })
+//
 
+//
 // //.map()... is also an array function... it returns a value...
 // //very useful array method and you will see it being used all over the place..
 // const a = [1, 2, 3]
@@ -572,7 +581,9 @@
 //    return number * 2
 // })
 // console.log(newA)
+//
 
+//
 // //.filter().... is another useful array method...
 // const a = [1, 2, 3, 4, 5, 6]
 // const b = [1, 5, 7, 9, 11, 13]
@@ -584,7 +595,9 @@
 // })
 // console.log("a array values--> " + newA)
 // console.log("b array values--> " + newB)
+//
 
+//
 // //.find() ... very similar to .filter() array method... it loops
 // //through elements in an array then ONLY returns something
 // //when the FISRT match is found.. then just returns the element; and
@@ -599,15 +612,16 @@
 // })
 // console.log(findA)
 // console.log(findB)
+//
 
-//***************************************
-//***************************************
-//***************************************
-//The following are rarely used array methods...
-//***************************************
-//***************************************
-const a = [1, 2, 3, 4, 5, 6]
-const b = [1, 5, 7, 9, 11, 13]
+// //***************************************
+// //***************************************
+// //***************************************
+// //The following are rarely used array methods...
+// //***************************************
+// //***************************************
+// const a = [1, 2, 3, 4, 5, 6]
+// const b = [1, 5, 7, 9, 11, 13]
 
 // //
 // //.some()... this is to check True/False whether any elements match the following..
@@ -620,7 +634,6 @@ const b = [1, 5, 7, 9, 11, 13]
 // console.log(someA)
 // console.log(someA)
 // console.log("***************************************")
-// //
 // //
 
 // //
@@ -635,18 +648,42 @@ const b = [1, 5, 7, 9, 11, 13]
 // console.log(everyB) //true because every array element is smaller than 100..
 // console.log("***************************************")
 // //
-// //
 
+// // //
+// //.reduce()... one of the more confusing Array functions; you take the whole
+// //array and reduce it to one singular value.. this function takes two arguments..
+// const reduceA = a.reduce((sum, number) => {
+//    return sum + number
+// }, 0)
+// console.log(reduceA)
+
+// //another .reduce() example...
+// const items = [
+//    { price: 10 },
+//    { price: 20 },
+//    { price: 30 },
+//    { price: 40 },
+//    { price: 50 },
+// ]
+// const reduceItems = items.reduce((sum, number) => {
+//    return sum + number.price
+// }, 0)
+// console.log(reduceItems)
+// console.log("***************************************")
+// // //
+
+//.includes()... Last EASY Array Method checks; if an element appears in array..
+const aaa = [1, 2, 3, 4, 5]
+const isTrue = aaa.includes(4) // returns true
+const isFalse = aaa.includes(33) //returns false
+
+console.log(isTrue)
+console.log(isFalse)
 //
-//.reduce()... one of the more confusing Array functions; you take the whole
-//array and reduce it to one singular value.. this function has two arguments..
-const reduceA = a.reduce((sum, number) => {
-   return sum + number
-}, 0)
-console.log(reduceA)
-console.log("***************************************")
-//
-//
+// //***************************************
+// //***************************************
+// //***************************************
+// //***************************************
 
 //
 //
