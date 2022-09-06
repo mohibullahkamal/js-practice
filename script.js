@@ -672,18 +672,44 @@
 // console.log("***************************************")
 // // //
 
-//.includes()... Last EASY Array Method checks; if an element appears in array..
-const aaa = [1, 2, 3, 4, 5]
-const isTrue = aaa.includes(4) // returns true
-const isFalse = aaa.includes(33) //returns false
+// //.includes()... Last EASY Array Method checks; if an element appears in array..
+// const aaa = [1, 2, 3, 4, 5]
+// const isTrue = aaa.includes(4) // returns true
+// const isFalse = aaa.includes(33) //returns false
 
-console.log(isTrue)
-console.log(isFalse)
+// console.log(isTrue)
+// console.log(isFalse)
+// //
+// // //***************************************
+// // //***************************************
+// // //***************************************
+// // //***************************************
+
 //
-// //***************************************
-// //***************************************
-// //***************************************
-// //***************************************
+//
+//
+//
+//32//String Template Literals...little bit different than above variables lecture..
+//THIS is a separate way we can define strings...it uses back ticks
+let a = `Hi`
+let b = "Hello"
+let c = "World"
+
+console.log(a)
+console.log(b + " " + c)
+console.log(`${a} ${b}`)
+console.log(`${2 + 4} ${c}`)
+
+//
+//
+
+//
+//
+//
+//
+////
+//
+//
 
 //
 //
