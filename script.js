@@ -717,6 +717,9 @@ console.log(user)
 
 //In JS you can create obj like this over and over again.. no problem with this..
 //however in JS you can also create new objects with the keyword "new"
+const date = new Date()
+console.log(date.getUTCDate()) //I get today's date
+console.log(date.getDay()) //1 stands for Monday, 2 for Tuesday, and so on...
 
 //
 //
