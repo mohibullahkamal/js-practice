@@ -701,25 +701,26 @@
 // //
 // //
 
-//
-//
-//
-//
-//33//new, and this...keywords and how these are associated with objects to create
-//special type of objects...so lets just create a function that allows us to create a
-//special type of 'user' object...
-//this 'createUser' is the TYPE of the object..with 'n' and 'a' as object properties...
-function createUser(name, age) {
-   return { n: name, a: age, human: true } //this is special representation...
-}
-const user = createUser("Mooo", 31) //'user' object is created w/ type 'createUser'
-console.log(user)
+// //
+// //
+// //
+// //
+// //33//new, and this...keywords and how these are associated with objects to create
+// //special type of objects...so lets just create a function that allows us to create a
+// //special type of 'user' object...
+// //this 'createUser' is the TYPE of the object..with 'n' and 'a' as object properties...
+// function createUser(name, age) {
+//    return { n: name, a: age, human: true } //this is special representation...
+// }
+// const user = createUser("Mooo", 31) //'user' object is created w/ type 'createUser'
+// console.log(user)
 
-//In JS you can create obj like this over and over again.. no problem with this..
-//however in JS you can also create new objects with the keyword "new"
-const date = new Date()
-console.log(date.getUTCDate()) //I get today's date
-console.log(date.getDay()) //1 stands for Monday, 2 for Tuesday, and so on...
+// //In JS you can create obj like this over and over again.. no problem with this..
+// //however in JS you can also create new objects with the keyword "new"
+// const date = new Date()
+// console.log(date.getUTCDate()) //I get today's date
+// console.log(date.getDay()) //1 stands for Monday, 2 for Tuesday, and so on...
+// console.log(date.getMonth()) //1 for Jan, 12 for December...
 
 //
 //
