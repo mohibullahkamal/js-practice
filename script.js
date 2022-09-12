@@ -723,42 +723,49 @@
 // console.log(date.getMonth()) //1 for Jan, 12 for December...
 //
 
-//
-//
-//don't use the below way to create constructor... use the handy "this" keyword..
-//below is a constructor function..best practice to use capital letter for Constructor..
-function User(name, age) {
-   // //return { name: name, age: age, human: true } //delete this.. use "this" instead..
-   //"this" keyword behind the scene does that --> this = { .... }
-   this.name = name
-   this.age = age
-   this.human = true
-   // //return { name: name, age: age, human: true } //donot have to do this...
-}
-//old way creating function; no function name like "User" constructor function..
-function createUser(name, age) {
-   return { n: name, a: age, human: true } //not used... no function name...
-}
-//creating new "User".. has type "User".. its nice because you know your Obj names..
-const user = new User("Mooo", 31)
-console.log(user) //now our constructor function has name "User"
-//creating new "userFunc"
-const userFunc = createUser("MooOLD", 300)
-console.log(userFunc) //no function name
+// //
+// //
+// //don't use the below way to create constructor... use the handy "this" keyword..
+// //below is a constructor function..best practice to use capital letter for Constructor..
+// function User(name, age) {
+//    // //return { name: name, age: age, human: true } //delete this.. use "this" instead..
+//    //"this" keyword behind the scene does that --> this = { .... }
+//    this.name = name
+//    this.age = age
+//    this.human = true
+//    // //return { name: name, age: age, human: true } //donot have to do this...
+// }
+// //old way creating function; no function name like "User" constructor function..
+// function createUser(name, age) {
+//    return { n: name, a: age, human: true } //not used... no function name...
+// }
+// //creating new "User".. has type "User".. its nice because you know your Obj names..
+// const user = new User("Mooo", 31)
+// console.log(user) //now our constructor function has name "User"
+// //creating new "userFunc"
+// const userFunc = createUser("MooOLD", 300)
+// console.log(userFunc) //no function name
 //kinda same thing as above constructor function; but a verbose way...
 //Lets see classes now; you are almost never gonna use it; but its good cause its
-//little bit clearer while working with then in big projects...
-class UserClass {
-   constructor(name, age) {
-      this.name = name
-      this.age = age
-      this.human = true
-   }
-}
-const userClass = new UserClass("Mooo", 31)
-console.log(userClass) //now our constructor function has name "User"
-// //
-// //
+//little bit clearer while working with then in big projects; easily add function later..
+//you almost never use class function...
+// class UserClass {
+//    constructor(name, age) {
+//       this.name = name
+//       this.age = age
+//       this.human = true
+//    }
+//    //advantage over other forms of functions is; can add functions easily later on...
+//    printName() {
+//       console.log(this.name)
+//    }
+// }
+// const userClass = new UserClass("Mooo", 31)
+// console.log(userClass) //now our constructor function has name "User"
+// // //console.log(userClass.printName()) //prints name..remove the console.log...
+// userClass.printName() //print name from UserClass...
+// // //
+// // //
 
 //
 //
