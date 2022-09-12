@@ -721,7 +721,10 @@
 // console.log(date.getUTCDate()) //I get today's date
 // console.log(date.getDay()) //1 stands for Monday, 2 for Tuesday, and so on...
 // console.log(date.getMonth()) //1 for Jan, 12 for December...
+//
 
+//
+//
 //don't use the below way to create constructor... use the handy "this" keyword..
 //below is a constructor function..best practice to use capital letter for Constructor..
 function User(name, age) {
@@ -732,11 +735,30 @@ function User(name, age) {
    this.human = true
    // //return { name: name, age: age, human: true } //donot have to do this...
 }
+//old way creating function; no function name like "User" constructor function..
+function createUser(name, age) {
+   return { n: name, a: age, human: true } //not used... no function name...
+}
+//creating new "User".. has type "User".. its nice because you know your Obj names..
 const user = new User("Mooo", 31)
-console.log(user)
-
-//
-//
+console.log(user) //now our constructor function has name "User"
+//creating new "userFunc"
+const userFunc = createUser("MooOLD", 300)
+console.log(userFunc) //no function name
+//kinda same thing as above constructor function; but a verbose way...
+//Lets see classes now; you are almost never gonna use it; but its good cause its
+//little bit clearer while working with then in big projects...
+class UserClass {
+   constructor(name, age) {
+      this.name = name
+      this.age = age
+      this.human = true
+   }
+}
+const userClass = new UserClass("Mooo", 31)
+console.log(userClass) //now our constructor function has name "User"
+// //
+// //
 
 //
 //
