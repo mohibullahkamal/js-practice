@@ -722,6 +722,19 @@
 // console.log(date.getDay()) //1 stands for Monday, 2 for Tuesday, and so on...
 // console.log(date.getMonth()) //1 for Jan, 12 for December...
 
+//don't use the below way to create constructor... use the handy "this" keyword..
+//below is a constructor function..best practice to use capital letter for Constructor..
+function User(name, age) {
+   // //return { name: name, age: age, human: true } //delete this.. use "this" instead..
+   //"this" keyword behind the scene does that --> this = { .... }
+   this.name = name
+   this.age = age
+   this.human = true
+   // //return { name: name, age: age, human: true } //donot have to do this...
+}
+const user = new User("Mooo", 31)
+console.log(user)
+
 //
 //
 
