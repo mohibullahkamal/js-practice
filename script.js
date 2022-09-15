@@ -793,7 +793,9 @@
 //
 //
 //
-//35// 'Window' object
+//35// 'window' object
+console.log(window) //has long long long long list of functions...
+window.console.log("This log statement has 'window' added to console.log")
 //
 //
 
