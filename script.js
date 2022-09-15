@@ -786,14 +786,14 @@
 //
 //
 //34//async vs defer ... Different ways to load JS inside of browser..
-//
+//All screenshots... no code...
 //
 
 //
 //
 //
 //
-////
+//35// 'Window' object
 //
 //
 
