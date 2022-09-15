@@ -804,11 +804,30 @@
 // // alert(alert) //shows error... need to add window.alert(..)
 // window.alert(alert)
 
-//only time you might need to add window.blabla is when you might use
-//also work perfectly fine without window... but use window for better code readability..
-window.addEventListener("resize", () => {
-   console.log("Resized; event is being listened...")
-})
+// //only time you might need to add window.blabla is when you might use
+// //also work perfectly fine without window... but use window for better code readability..
+// window.addEventListener("resize", () => {
+//    console.log("Resized; event is being listened...")
+// })
+// //
+// //
+
+//
+//
+//
+//
+//36//'document' object ...extremely important all across browser...
+console.log(document) //or 'window.document()...'
+console.log(document.body) //gives us only the body part...
+console.log(document.documentElement)
+//
+//
+
+//
+//
+//
+//
+////
 //
 //
 
