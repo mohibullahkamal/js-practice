@@ -789,13 +789,26 @@
 //All screenshots... no code...
 //
 
-//
-//
-//
-//
-//35// 'window' object
-console.log(window) //has long long long long list of functions...
-window.console.log("This log statement has 'window' added to console.log")
+// //
+// //
+// //
+// //
+// //35// 'window' object
+// console.log(window) //has long long long long list of functions...
+// window.console.log("This log statement has 'window' added to console.log")
+
+// alert("hi") //no need to write window.alert(...); only time when you need is if you
+// //have a variable named alert...see below
+
+// const alert = "message"
+// // alert(alert) //shows error... need to add window.alert(..)
+// window.alert(alert)
+
+//only time you might need to add window.blabla is when you might use
+//also work perfectly fine without window... but use window for better code readability..
+window.addEventListener("resize", () => {
+   console.log("Resized; event is being listened...")
+})
 //
 //
 
