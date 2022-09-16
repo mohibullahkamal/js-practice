@@ -812,14 +812,51 @@
 // //
 // //
 
+// // //
+// // //
+// // //
+// // //
+// // //36//'document' object ...extremely important all across browser...
+// // console.log(document) //or 'window.document()...'
+// // console.log(window.document) //same really...
+// // console.log(document.body) //gives us only the body part...
+// // console.log(document.documentElement)
+
+// //You can create a new element..
+// const element1 = document.createElement("div")
+// element1.innerText = "Hello World...this is div"
+// document.body.appendChild(element1)
+// console.log(element1)
+// console.log(document.body)
+
+// const element2 = document.createElement("span")
+// element2.innerText = "This is span.."
+// document.body.appendChild(element2)
+// console.log(element2)
+// //
+// //
+
 //
 //
 //
 //
-//36//'document' object ...extremely important all across browser...
-console.log(document) //or 'window.document()...'
-console.log(document.body) //gives us only the body part...
-console.log(document.documentElement)
+//37//'id' and 'class' selectors...
+//
+//
+
+//
+//
+//
+//
+////
+//
+//
+
+//
+//
+//
+//
+////
 //
 //
 
