@@ -840,7 +840,8 @@
 //
 //
 //
-//37//'id' and 'class' selectors...
+//37//'id' and 'class' selectors... see index.html for code
+
 //
 //
 
