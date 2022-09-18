@@ -841,7 +841,10 @@
 //
 //
 //37//'id' and 'class' selectors... see index.html for code
-
+let divId = document.getElementById("div-id")
+console.log(divId)
+let divClass = document.getElementsByClassName("div-class")
+console.log(divClass)
 //
 //
 
