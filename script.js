@@ -843,8 +843,11 @@
 //37//'id' and 'class' selectors... see index.html for code
 let divId = document.getElementById("div-id")
 console.log(divId)
+divId.style.color = "red" //change text color to red
+
 let divClass = document.getElementsByClassName("div-class")
 console.log(divClass)
+
 //
 //
 
