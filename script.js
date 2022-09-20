@@ -851,8 +851,15 @@ let divClass = document.getElementsByClassName("div-class")
 console.log(divClass) //gives array of divs
 
 //how about spelling it wrong...
-let divErrorClass = document.getElementsByClassName("div-cl")
+let divErrorClass = document.getElementsByClassName("div-cl") //no div named "div-cl"
 console.log(divErrorClass) //this returns an empty array... but doesnot show error...
+
+// //shows error..We cannot directly say so... because it is array
+// divClass.style.color = "green" //will not work;can't change all array elements at once
+
+//Instead we need to go indivisualy over elements
+//
+//
 
 //
 //
