@@ -845,8 +845,14 @@ let divId = document.getElementById("div-id")
 console.log(divId)
 divId.style.color = "red" //change text color to red
 
+//look closely.. its says "getElements..." means it will return an array of elements..
+//classes can be on many elements... so returns array of all elements...
 let divClass = document.getElementsByClassName("div-class")
-console.log(divClass)
+console.log(divClass) //gives array of divs
+
+//how about spelling it wrong...
+let divErrorClass = document.getElementsByClassName("div-cl")
+console.log(divErrorClass) //this returns an empty array... but doesnot show error...
 
 //
 //
