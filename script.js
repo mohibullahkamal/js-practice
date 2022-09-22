@@ -845,19 +845,25 @@ let divId = document.getElementById("div-id")
 console.log(divId)
 divId.style.color = "red" //change text color to red
 
-//look closely.. its says "getElements..." means it will return an array of elements..
+//look closely.. it says "getElements..." means it will return an array of elements..
 //classes can be on many elements... so returns array of all elements...
 let divClass = document.getElementsByClassName("div-class")
-console.log(divClass) //gives array of divs
+// console.log(divClass) //gives array of divs
 
-//how about spelling it wrong...
-let divErrorClass = document.getElementsByClassName("div-cl") //no div named "div-cl"
-console.log(divErrorClass) //this returns an empty array... but doesnot show error...
+// //how about spelling it wrong...
+// let divErrorClass = document.getElementsByClassName("div-cl") //no div named "div-cl"
+// console.log(divErrorClass) //this returns an empty array... but doesnot show error...
 
 // //shows error..We cannot directly say so... because it is array
 // divClass.style.color = "green" //will not work;can't change all array elements at once
 
-//Instead we need to go indivisualy over elements
+// //Instead we need to go indivisualy over elements
+// divClass.forEach((div) => (div.style.color = "green")) //this is wrong..
+
+//you have to convert variable to arrays...
+const divClassArray = Array.from(divClass)
+//now we can change all array elements green at once..
+divClassArray.forEach((div) => (div.style.color = "green"))
 //
 //
 
