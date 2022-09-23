@@ -836,37 +836,55 @@
 // //
 // //
 
+// //
+// //
+// //
+// //
+// //37//'id' and 'class' selectors... see index.html for code
+// let divId = document.getElementById("div-id")
+// console.log(divId)
+// divId.style.color = "red" //change text color to red
+
+// //look closely.. it says "getElements..." means it will return an array of elements..
+// //classes can be on many elements... so returns array of all elements...
+// let divClass = document.getElementsByClassName("div-class")
+// // console.log(divClass) //gives array of divs
+
+// // // //how about spelling it wrong...
+// // // let divErrorClass = document.getElementsByClassName("div-cl") //no div named "div-cl"
+// // // console.log(divErrorClass) //this returns an empty array... but doesnot show error...
+
+// // // //shows error..We cannot directly say so... because it is array
+// // // divClass.style.color = "green" //will not work;can't change all array elements at once
+
+// // // // // //Instead we need to go indivisualy over elements
+// // // // // divClass.forEach((div) => (div.style.color = "green")) //this is wrong..
+// // // // divClass[0].style.color = "brown"
+// // // // divClass[1].style.color = "green"
+// // // // divClass[2].style.color = "purple"
+// // // // divClass[3].style.color = "orange"
+
+// // //you have to convert variable to arrays...
+// // const divClassArray = Array.from(divClass)
+// // //now we can change all array elements green at once..
+// // divClassArray.forEach((div) => (div.style.color = "green"))
+// // //
+// // //
+
 //
 //
 //
 //
-//37//'id' and 'class' selectors... see index.html for code
-let divId = document.getElementById("div-id")
-console.log(divId)
-divId.style.color = "red" //change text color to red
+//38//Query selectors... Very Important... Use 99% percent of the time
 
-//look closely.. it says "getElements..." means it will return an array of elements..
-//classes can be on many elements... so returns array of all elements...
-let divClass = document.getElementsByClassName("div-class")
-// console.log(divClass) //gives array of divs
-
-// //how about spelling it wrong...
-// let divErrorClass = document.getElementsByClassName("div-cl") //no div named "div-cl"
-// console.log(divErrorClass) //this returns an empty array... but doesnot show error...
-
-// //shows error..We cannot directly say so... because it is array
-// divClass.style.color = "green" //will not work;can't change all array elements at once
-
-// //Instead we need to go indivisualy over elements
-// divClass.forEach((div) => (div.style.color = "green")) //this is wrong..
-
-//you have to convert variable to arrays...
-const divClassArray = Array.from(divClass)
-//now we can change all array elements green at once..
-divClassArray.forEach((div) => (div.style.color = "green"))
 //
 //
 
+//
+//
+//
+//
+////
 //
 //
 
