@@ -1,5 +1,17 @@
 
 
+
+<br><br>
+<p>Chrome DevTools & CSS Box Model... </p>
+<style>
+   
+
+</style>
+
+
+
+
+<!--
 <br><br>
 <p>Hover, transition, and shadow... </p>
 <style>
@@ -12,6 +24,7 @@
       border-radius: 2px;
       cursor: pointer;
       margin-right: 8px;
+      transition: opacity 0.5s;
    }
    .subscribe-button:hover {
       opacity: 0.6;
@@ -19,6 +32,7 @@
    .subscribe-button:active {
       opacity: 0.3;
    }
+
 
    .join-button {
       background-color: white;
@@ -31,7 +45,16 @@
       border-radius: 2px;
       cursor: pointer;
       margin-right: 8px;
+      transition: background-color  .15s, color .15s;
+   }   
+   .join-button:hover {
+      background-color: rgb(41, 118, 211);
+      color: white;
    }
+   .join-button:active {
+      opacity: 0.6;
+   }
+
 
    .tweet-button {
       background-color: rgb(2, 137, 255);
@@ -44,13 +67,21 @@
       font-size: 15px;
       cursor: pointer;
       margin-right: 8px;
+      transition: opacity 0.15s;
+   }
+   .tweet-button:hover {
+      opacity: 0.8;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+   }
+   .tweet-button:active {
+      opacity: 0.6;
+      background-color: blue;
    }
 </style>
 
 <button class="subscribe-button">SUBSCRIBE</button>
 <button class="join-button">JOIN</button>
 <button class="tweet-button">Tweet</button>
-
 
 
 
