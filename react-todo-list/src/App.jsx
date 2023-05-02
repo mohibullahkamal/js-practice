@@ -1,15 +1,28 @@
+import { useState } from "react"
 import "./styles.css"
 
 export default function App() {
+  const [newItem, setNewItem] = useState("")
+
+  function handleSubmit() {
+
+  }
+
   return (
     <>
-      <form className="new-item-form">
+      <form onSubmit={handleSubmit} className="new-item-form">
         <div className="form-row">
           <label htmlFor="item">New Item</label>
-          <input type="text" id="item" />
+          <input 
+            value={newItem}
+            onChange={e => setNewItem(e.target.value)}
+            type="text" 
+            id="item"
+          />
         </div>
         <button className="btn">ADD</button>
       </form>
+
 
       <h1 className="header">Todo List</h1>
       <ul className="list">
@@ -17,8 +30,13 @@ export default function App() {
           <label><input type="checkbox" />Item1</label>
           <button className="btn btn-danger">Delete</button>
         </li>
+
+        <li>
+          <label><input type="checkbox" />Item2</label>
+          <button className="btn btn-danger">Delete</button>
+        </li>
       </ul>
-      
+
     </>
   )
 }
