@@ -3,9 +3,10 @@ import "./styles.css"
 
 export default function App() {
   const [newItem, setNewItem] = useState("")
+  const [todos, setTodos] = useState([])
 
-  function handleSubmit() {
-
+  function handleSubmit(e) {
+    e.preventDefault()
   }
 
   return (
